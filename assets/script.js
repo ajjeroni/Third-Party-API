@@ -131,6 +131,87 @@ if (fiveCheck2) {
 if (fiveCheck3) { 
   $('#hour-5').addClass("future");
 }
+//click the save button for that time block
+var saved9 = localStorage.getItem("text9");
+$('#myTextArea9').text(saved9)
+$(document).ready(function() {
+  $('#nine').on('click', function() {
+    var textareaValue9 = $('#myTextArea9').val();
+    localStorage.setItem("text9", textareaValue9);
+  });
+});
+
+var saved10 = localStorage.getItem("text10");
+$('#myTextArea10').text(saved10)
+$(document).ready(function() {
+  $('#ten').on('click', function() {
+    var textareaValue10 = $('#myTextArea10').val();
+    localStorage.setItem("text10", textareaValue10);
+  });
+});
+
+var saved11 = localStorage.getItem("text11");
+$('#myTextArea11').text(saved11)
+$(document).ready(function() {
+  $('#eleven').on('click', function() {
+    var textareaValue11 = $('#myTextArea11').val();
+    localStorage.setItem("text11", textareaValue11);
+  });
+});
+
+var saved12 = localStorage.getItem("text12");
+$('#myTextArea12').text(saved12)
+$(document).ready(function() {
+  $('#twelve').on('click', function() {
+    var textareaValue12 = $('#myTextArea12').val();
+    localStorage.setItem("text12", textareaValue12);
+  });
+});
+
+var saved1 = localStorage.getItem("text1");
+$('#myTextArea1').text(saved1)
+$(document).ready(function() {
+  $('#one').on('click', function() {
+    var textareaValue1 = $('#myTextArea1').val();
+    localStorage.setItem("text1", textareaValue1);
+  });
+});
+
+var saved2 = localStorage.getItem("text2");
+$('#myTextArea2').text(saved2)
+$(document).ready(function() {
+  $('#two').on('click', function() {
+    var textareaValue2 = $('#myTextArea2').val();
+    localStorage.setItem("text2", textareaValue2);
+  });
+});
+
+var saved3 = localStorage.getItem("text3");
+$('#myTextArea3').text(saved3)
+$(document).ready(function() {
+  $('#three').on('click', function() {
+    var textareaValue3 = $('#myTextArea3').val();
+    localStorage.setItem("text3", textareaValue3);
+  });
+});
+
+var saved4 = localStorage.getItem("text4");
+$('#myTextArea4').text(saved4)
+$(document).ready(function() {
+  $('#four').on('click', function() {
+    var textareaValue4 = $('#myTextArea4').val();
+    localStorage.setItem("text4", textareaValue4);
+  });
+});
+
+var saved5 = localStorage.getItem("text5");
+$('#myTextArea5').text(saved5)
+$(document).ready(function() {
+  $('#five').on('click', function() {
+    var textareaValue5 = $('#myTextArea5').val();
+    localStorage.setItem("text5", textareaValue5);
+  });
+});
 
 
 
