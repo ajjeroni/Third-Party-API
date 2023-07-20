@@ -7,9 +7,8 @@ var currentTime = dayjs();
 console.log(currentTime.format('h a'))
 
 var nineAM = dayjs().set('hour', 9).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(nineAM).isBefore(dayjs(currentTime)))
 var nineCheck1 = dayjs(nineAM).isBefore(dayjs(currentTime))
-var nineCheck2 = dayjs(nineAM).isSame(dayjs(currentTime))
+var nineCheck2 = nineAM.hour() === currentTime.hour()
 var nineCheck3 = dayjs(nineAM).isAfter(dayjs(currentTime))
 if (nineCheck1) { 
   $('#hour-9').addClass("past");
@@ -22,9 +21,8 @@ if (nineCheck3) {
 }
 
 var tenAM = dayjs().set('hour', 10).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(tenAM).isBefore(dayjs(currentTime)))
 var tenCheck1 = dayjs(tenAM).isBefore(dayjs(currentTime))
-var tenCheck2 = dayjs(tenAM).isSame(dayjs(currentTime))
+var tenCheck2 = tenAM.hour() === currentTime.hour()
 var tenCheck3 = dayjs(tenAM).isAfter(dayjs(currentTime))
 if (tenCheck1) { 
   $('#hour-10').addClass("past");
@@ -37,9 +35,8 @@ if (tenCheck3) {
 }
 
 var elevenAM = dayjs().set('hour', 11).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(elevenAM).isBefore(dayjs(currentTime)))
 var elevenCheck1 = dayjs(elevenAM).isBefore(dayjs(currentTime))
-var elevenCheck2 = dayjs(elevenAM).isSame(dayjs(currentTime))
+var elevenCheck2 = elevenAM.hour() === currentTime.hour()
 var elevenCheck3 = dayjs(elevenAM).isAfter(dayjs(currentTime))
 if (elevenCheck1) { 
   $('#hour-11').addClass("past");
@@ -52,9 +49,8 @@ if (elevenCheck3) {
 }
 
 var twelvePM = dayjs().set('hour', 12).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(twelvePM).isBefore(dayjs(currentTime)))
 var twelveCheck1 = dayjs(twelvePM).isBefore(dayjs(currentTime))
-var twelveCheck2 = dayjs(twelvePM).isSame(dayjs(currentTime))
+var twelveCheck2 = twelvePM.hour() === currentTime.hour()
 var twelveCheck3 = dayjs(twelvePM).isAfter(dayjs(currentTime))
 if (twelveCheck1) { 
   $('#hour-12').addClass("past");
@@ -67,9 +63,8 @@ if (twelveCheck3) {
 }
 
 var onePM = dayjs().set('hour', 13).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(onePM).isBefore(dayjs(currentTime)))
 var oneCheck1 = dayjs(onePM).isBefore(dayjs(currentTime))
-var oneCheck2 = dayjs(onePM).isSame(dayjs(currentTime))
+var oneCheck2 = onePM.hour() === currentTime.hour()
 var oneCheck3 = dayjs(onePM).isAfter(dayjs(currentTime))
 if (oneCheck1) { 
   $('#hour-1').addClass("past");
@@ -82,9 +77,8 @@ if (oneCheck3) {
 }
 
 var twoPM = dayjs().set('hour', 14).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(twoPM).isBefore(dayjs(currentTime)))
 var twoCheck1 = dayjs(twoPM).isBefore(dayjs(currentTime))
-var twoCheck2 = dayjs(twoPM).isSame(dayjs(currentTime))
+var twoCheck2 = twoPM.hour() === currentTime.hour()
 var twoCheck3 = dayjs(twoPM).isAfter(dayjs(currentTime))
 if (twoCheck1) { 
   $('#hour-2').addClass("past");
@@ -97,9 +91,8 @@ if (twoCheck3) {
 }
 
 var threePM = dayjs().set('hour', 15).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(threePM).isBefore(dayjs(currentTime)))
 var threeCheck1 = dayjs(threePM).isBefore(dayjs(currentTime))
-var threeCheck2 = dayjs(threePM).isSame(dayjs(currentTime))
+var threeCheck2 = threePM.hour() === currentTime.hour()
 var threeCheck3 = dayjs(threePM).isAfter(dayjs(currentTime))
 if (threeCheck1) { 
   $('#hour-3').addClass("past");
@@ -112,9 +105,8 @@ if (threeCheck3) {
 }
 
 var fourPM = dayjs().set('hour', 16).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(fourPM).isBefore(dayjs(currentTime)))
 var fourCheck1 = dayjs(fourPM).isBefore(dayjs(currentTime))
-var fourCheck2 = dayjs(fourPM).isSame(dayjs(currentTime))
+var fourCheck2 = fourPM.hour() === currentTime.hour()
 var fourCheck3 = dayjs(fourPM).isAfter(dayjs(currentTime))
 if (fourCheck1) { 
   $('#hour-4').addClass("past");
@@ -127,9 +119,8 @@ if (fourCheck3) {
 }
 
 var fivePM = dayjs().set('hour', 17).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(fivePM).isSame(dayjs(currentTime, 'hour')))
 var fiveCheck1 = dayjs(fivePM).isBefore(dayjs(currentTime))
-var fiveCheck2 = dayjs(fivePM).isSame(dayjs(currentTime, 'hour'))
+var fiveCheck2 = fivePM.hour() === currentTime.hour()
 var fiveCheck3 = dayjs(fivePM).isAfter(dayjs(currentTime))
 if (fiveCheck1) { 
   $('#hour-5').addClass("past");
@@ -141,7 +132,5 @@ if (fiveCheck3) {
   $('#hour-5').addClass("future");
 }
 
-var sixPM = dayjs().set('hour', 18).set('minute', 0).set('second', 0).set('millisecond', 0);
-console.log(dayjs(sixPM).isSame(dayjs(currentTime, 'hh')))
 
 
